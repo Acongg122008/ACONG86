@@ -443,23 +443,48 @@ h2 {
   }
 }
 @media (max-width: 768px) {
+  .section-1 {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .img-section1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .gambar1 {
+    width: 80vw;
+    height: auto;
+  }
+  .content {
+    font-size: 14px;
+    text-align: center;
+  }
+  .navbar a {
+    margin-left: 1rem;
+    font-size: 14px;
+  }
   .contact-us {
     padding: 15px;
+    margin-left: 0;
   }
-
   .contact-us h2 {
     font-size: 1.5rem;
   }
-
   .form-group {
     margin-bottom: 10px;
   }
-
   .submit-btn {
     padding: 8px 16px;
     font-size: 0.875rem;
   }
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
+
 @media only screen and (max-width: 600px) {
   .section-1 {
     padding-bottom: 100px;
@@ -468,7 +493,7 @@ h2 {
     font-size: 24px;
   }
   .content {
-    font-size: 10px;
+    font-size: 12px;
   }
   .gambar1 {
     width: 200px;
@@ -476,5 +501,33 @@ h2 {
   }
   .paragraf1 {
     font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar a {
+    margin-left: 0.5rem;
+    font-size: 12px;
+  }
+  .content h1 {
+    font-size: 28px;
+  }
+  .content h3 {
+    font-size: 18px;
+  }
+  .content p {
+    font-size: 12px;
+  }
+  .btn-btn {
+    width: 40vw;
+    height: 7vh;
+    margin-left: 0;
+  }
+  .footer-links {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .footer-social {
+    gap: 5px;
   }
 }
